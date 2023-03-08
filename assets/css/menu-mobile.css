@@ -1,0 +1,49 @@
+.menu-button {
+  border: none;
+  background: none;
+  display: none;
+  margin: 4px 10px 0 0;
+  z-index: 1000;
+}
+
+@media (max-width:900px) {
+  .menu-button {
+    display: block;
+  }
+
+  .navigation {
+    justify-content: flex-end;
+  }
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.active {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #fff;
+    height: 100vh;
+    width: 60vh;
+    max-width: 360px;
+    z-index: 1;
+  }
+
+  .main-nav.active ul {
+    display: block;
+    padding: 80px 40px 40px 20px;
+    max-height: 100%;
+  }
+
+  .main-nav.active li + li {
+    margin-top: 5px;
+  }
+
+  .main-nav.active a {
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    padding: 10px;
+    display: block;
+  }
+}

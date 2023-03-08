@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <header class="header-container">
+    <button class="menu-button" data-menu="btn">
+        <img src="./assets/images/icon-menu.svg" alt="">
+    </button>
+    <a class="header-logo" href="#">
+      <img src="./assets/images/logo.svg" alt="Sneakers">
+    </a>
+    <div class="navigation">
+      <nav class="main-nav" data-menu="content">
+        <ul>
+          <li>
+            <a href="#">
+              Collections
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Men
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Women
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="user-menu" role="navigation" aria-label="User menu">
+        <ul>
+          <li class="user-cart" data-cart="dropdown">
+            <a href="#">
+              <img class="cart-icon" src="./assets/images/icon-cart.svg" alt="Icon cart">
+            </a>
+            <span class="counter-cart">0</span>
+            <ul class="cart-dropdown" data-cart="content">
+              <li class="cart-title">Cart</li>
+              <li class="cart-item" data-cart="item">
+                <div class="cart-content">
+                  <div class="item-thumbnail">
+                    <img src="./assets/images/image-product-1-thumbnail.jpg" alt="">
+                  </div>
+                  <div class="item-desc">
+                    <h4>Fall Limited Edition Sneakers</h4>
+                    <span class="item-price" data-cart="amount">$125.00 x 1<span class="item-total">$125.00</span>
+                    </span>
+                  </div>
+                  <button class="btn-trash" data-cart="trash">
+                    <img src="./assets/images/icon-delete.svg" alt="">
+                  </button>
+                </div>
+                <button class="button-add cart">Checkout</button>
+              </li>
+              <li class="cart-empty active" data-cart="empty">Your cart is empty</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><img class="user-image" src="./assets/images/image-avatar.png" alt="User avatar image"></a>
+          </li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <main class="product-container">
+    <div class="product-galeria">
+      <div data-galeria="main-img" data-lightbox="popup">
+        <button class="mobile-btn previous" data-mobile="btn-previous">
+          <img src="./assets/images/icon-previous.svg" alt="Previous button">
+        </button>
+        <img class="hero-image active" src="./assets/images/image-product-1.jpg" alt="Sneaker">
+        <img class="hero-image" src="./assets/images/image-product-2.jpg" alt="Sneaker">
+        <img class="hero-image" src="./assets/images/image-product-3.jpg" alt="Sneaker">
+        <img class="hero-image" src="./assets/images/image-product-4.jpg" alt="Sneaker">
+        <button class="mobile-btn next" data-mobile="btn-next">
+          <img src="./assets/images/icon-next.svg" alt="Next button">
+        </button>
+      </div>
+      <div class="galeria-thumbnails" data-galeria="thumbnails">
+        <ul>
+          <li>
+            <img class="active" src="./assets/images/image-product-1-thumbnail.jpg" alt="Sneaker thumbnail">
+          </li>
+          <li>
+            <img src="./assets/images/image-product-2-thumbnail.jpg" alt="Sneaker thumbnail">
+          </li>
+          <li>
+            <img src="./assets/images/image-product-3-thumbnail.jpg" alt="Sneaker thumbnail">
+          </li>
+          <li>
+            <img src="./assets/images/image-product-4-thumbnail.jpg" alt="Sneaker thumbnail">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product-description">
+      <div class="product-text">
+        <span>
+          Sneaker Company
+        </span>
+        <h1>
+          Fall Limited Edition <br>Sneakers
+        </h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <span class="current-price">
+          $125.00
+          <span class="percentual-discount">50%</span>
+        </span>
+        <span class="previous-price">$250.00
+        </span>
+      </div>
+      <div class="product-buttons">
+        <div class="button-cart">
+
+          <button class="btn-decrement" data-cart="btn-minus">
+            <img src="./assets/images/icon-minus.svg" alt="Minus icon">
+          </button>
+          <span class="button-value" data-cart="value">
+            1
+          </span>
+
+          <button class="btn-increment" data-cart="btn-plus">
+            <img src="./assets/images/icon-plus.svg" alt="Plus icon">
+          </button>
+
+        </div>
+        <button class="button-add" data-cart="add">
+          <img src="./assets/images/icon-cart-white.svg" alt="">Add to cart
+        </button>
+      </div>
+    </section>
+
+  </main>
+  </div>
+  <div class="lightbox" data-lightbox="modal">
+    <div class="lightbox-hero">
+      <button class="exit-btn" data-lightbox="close">
+        <img src="./assets/images/icon-close-white.svg" alt="">
+      </button>
+      <button class="control-btn previous" data-lightbox="previous">
+        <img src="./assets/images/icon-previous.svg" alt="Previous button">
+      </button>
+      <div data-lightbox="main-img">
+        <img class="hero-image active" src="./assets/images/image-product-1.jpg" alt="Sneaker">
+        <img class="hero-image" src="./assets/images/image-product-2.jpg" alt="Sneaker">
+        <img class="hero-image" src="./assets/images/image-product-3.jpg" alt="Sneaker">
+        <img class="hero-image" src="./assets/images/image-product-4.jpg" alt="Sneaker">
+      </div>
+      <button class="control-btn next" data-lightbox="next">
+        <img src="./assets/images/icon-next.svg" alt="Next button">
+      </button>
+    </div>
+    <div class="galeria-thumbnails" data-lightbox="thumbnails">
+      <ul>
+        <li>
+          <img src="./assets/images/image-product-1-thumbnail.jpg" alt="Sneaker thumbnail">
+        </li>
+        <li>
+          <img src="./assets/images/image-product-2-thumbnail.jpg" alt="Sneaker thumbnail">
+        </li>
+        <li>
+          <img src="./assets/images/image-product-3-thumbnail.jpg" alt="Sneaker thumbnail">
+        </li>
+        <li>
+          <img src="./assets/images/image-product-4-thumbnail.jpg" alt="Sneaker thumbnail">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="darken"></div>
+  <script type="module" src="./assets/js/script.js"></script>
+</body>
+
+</html>

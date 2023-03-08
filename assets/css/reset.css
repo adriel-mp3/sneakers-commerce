@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100%;
+}
+
+body,
+li,
+ul,
+span,
+h1,
+h4,
+p {
+  margin:0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

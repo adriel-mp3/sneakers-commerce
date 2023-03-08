@@ -1,0 +1,14 @@
+body {
+  background: #fff;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.darken.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height:100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
